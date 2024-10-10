@@ -1,0 +1,68 @@
+.portfolio {
+
+    .projects {
+        .content {
+           
+        
+
+        .btns {
+         
+
+            button {
+                margin: 0 10px;
+                padding: 10px;
+                border-radius: 4px;
+                border: transparent;
+                transition: .3s ease;
+
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+
+
+        }
+
+        h2 {
+            color: $white;
+            margin: 22px;
+        }
+
+        &>* {
+            transform: translateY(35px);
+
+            transition: transform .6s;
+        }
+
+        &:hover>* {
+            transform: translateY(0);
+
+
+        }
+
+        &:hover {
+            opacity: 1;
+
+        }
+
+
+        h1 {
+            font-size: 45px;
+            color: $darkblue;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $skyblue;
+            font-size: 19px;
+        }
+
+    }
+
+
+
+}
+}

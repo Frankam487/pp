@@ -1,0 +1,79 @@
+.clients {
+    .text {
+        flex-direction: column;
+        @include childCenter;
+        margin: 60px auto;
+
+        h3 {
+            color: $skyblue;
+            letter-spacing: 1.5px;
+        }
+
+        h1 {
+            font-weight: 800;
+            color: $darkblue;
+
+            span {
+                font-family: $font3;
+                font-weight: 900;
+                color: $skyblue;
+            }
+        }
+    }
+.people-container{
+  
+    display: flex;
+    margin-top: 62px;
+}
+    .each-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        p {
+            text-align: left;
+            margin-top:22px;
+        }
+        .each{
+            
+            display: flex;
+            
+            .stars {
+                display: flex;
+                
+                span {
+                    
+                    color: $skyblue;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+                    margin-top: 5px;
+                    
+                }
+            }
+            
+            .name {
+            display: flex;
+            flex-direction: column;
+            margin: 0 12px;
+            
+            i {
+                margin: 5px 0;
+                
+                text-align: left;
+            }
+        }
+
+        
+
+        img {
+            height: 50px;
+            width: 50px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        
+       
+    }
+}
+}
