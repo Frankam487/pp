@@ -1,11 +1,14 @@
 const AboutMe = () => {
+
   return (
     <div className="aboutMe">
       <div className="image"></div>
       <div className="intro">
         <div className="intro-container">
-          <h2>Mon Intro</h2>
-          <h1>A propos de moi</h1>
+          <div className="text">
+            <h2>Mon Intro</h2>
+            <h1>A propos de moi</h1>
+          </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
             dolorem mollitia eaque minus voluptas eveniet itaque possimus!
@@ -50,6 +53,9 @@ const AboutMe = () => {
               <i>Movies</i>
             </h3>
           </div>
+        </div>
+        <div className="footter">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio deleniti ratione cum nihil voluptatibus sint distincptate, voluptatum placeat reiciendis ipsa possimus velit dolorem delectus corrupti perferendis sapiente eligendi ullam praesentium, vitae culpa atque. Maiores rerum dolores officia cupiditate ut minus fuga velit alias quidem.</p>
         </div>
       </div>
     </div>

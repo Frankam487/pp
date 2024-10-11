@@ -1,3 +1,5 @@
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 const Portfolio = () => {
   return (
     <div className="portfolio">
@@ -27,23 +29,23 @@ const Portfolio = () => {
               <button className="flex">X</button>
               <button className="flex">X</button>
             </div>
-            <h2 className="translate-y-[210px]">Web Design</h2>
+            <h2 className="">Web Design</h2>
           </div>
         </div>
         <div className="image m-12 relative w-[400px] ">
           <img src="../../public/fr.jpg" alt="" />
-          <div className="content absolute top-[-220px] left-[-11px] h-full w-full bg-black/60 flex flex-col  items-center transition-opacity duration-600 hover:opacity-100 md:top-[-220px] opacity-0">
-            <div className="btns flex transform translate-y-[35px] transition-transform duration-600 group-hover:translate-y-0">
+          <div className="content ">
+            <div className="btns ">
               <button>X</button>
               <button>X</button>
             </div>
-            <h2 className="translate-y-[210px]">App Mobile</h2>
+            <h2 className="">App Mobile</h2>
           </div>
         </div>
         <div className="image m-12 relative w-[400px]">
           <img src="../../public/fr.jpg" alt="" class />
-          <div className="content absolute top-[-220px] left-[-11px] h-full w-full bg-black/60 flex flex-col justify-center items-center md:top-[-220px]">
-            <div className="btns flex transform translate-y-[35px] transition-transform duration-600 group-hover:translate-y-0">
+          <div className="content ">
+            <div className="btns ">
               <button>X</button>
               <button>X</button>
             </div>
@@ -52,8 +54,8 @@ const Portfolio = () => {
         </div>
         <div className="image m-12 relative w-[400px]">
           <img src="../../public/fr.jpg" alt="" class />
-          <div className="content absolute top-[-220px] left-[-11px] h-full w-full bg-black/60 flex flex-col justify-center items-center opacity-0 transition duration-600 md:top-[-220px]">
-            <div className="btns flex transform translate-y-[35px] transition-transform duration-600 group-hover:translate-y-0">
+          <div className="content ">
+            <div className="btns ">
               <button className="">X</button>
               <button className="">X</button>
             </div>
@@ -62,8 +64,8 @@ const Portfolio = () => {
         </div>
         <div className="image m-12 relative w-[400px]">
           <img src="../../public/fr.jpg" alt="" class />
-          <div className="content absolute top-[-220px] left-[-11px] h-full w-full bg-black/60 flex flex-col justify-center items-center opacity-0 transition duration-600 md:top-[-220px]">
-            <div className="btns flex transform translate-y-[35px] transition-transform duration-600 group-hover:translate-y-0">
+          <div className="content ">
+            <div className="btns ">
               <button>X</button>
               <button>X</button>
             </div>

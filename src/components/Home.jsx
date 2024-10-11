@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <>
       <Icons />
-      <div className="content 1005:flex grid grid-cols-[55%_35%] my-48">
+      <div className="content ">
         <div className="home text-center">
           <div className="name-content mx-36">
             <h4 className="text-1xl text-cyan-500 font-bold my-2">

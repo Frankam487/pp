@@ -9,7 +9,7 @@ const Blog = () => {
       <div className="images">
         <img src="./images.jpg" alt="" />
         <div className="img-footer">
-          <i className="text-red-100">01 JAN 2020</i>
+          <i className="">01 JAN 2020</i>
           <h3>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor je
             suis sed.

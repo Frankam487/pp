@@ -1,36 +1,76 @@
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 const Clients = () => {
+    const responsive = {
+        superLargeDesktop: {
+
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    }
+
     return (
+
         <div className="clients">
-
             <div className="text">
-                <h3>Testimonial</h3>
-                <h1>Mes Clients Disent <span>...</span></h1>
-                <div className="people-container">
-                    
-                    <div className="each-container">
-                       <div className="each">
-                         <img src="" alt="" />
-                         <div className="name">
-                            <h2>Frank Kamgang</h2>
-                            <i>Client</i>
-                            </div>
-                            <div className="stars">
-                            <span className="fas fa-star"></span>
-                            <span className="fas fa-star"></span>
-                            <span className="fas fa-star"></span>
-                            <span className="fas fa-star"></span>
-                            <span className="fas fa-star"></span>
-                        </div>
-                       
-                       </div>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, corporis accusamus commodi ipsa sit quia odio. Quis, ipsam!
-                    </p>
-                    </div>
-
-                    
-                </div>
+                <h4>Testimonial</h4>
+                <h1>C'que mes clients disent</h1>
             </div>
+            <Carousel responsive={responsive}>
+                <div className="">
+                    <img src="../../public/cup-7263953.jpg" alt="" />
+                    <h3>Frank Kamgang</h3>
+                    <p>Client</p>
+                    <div className="stars">
+                        <span className="fas "></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../public/cup-7263953.jpg" alt="" />
+                    <h3>Frank Kamgang</h3>
+                    <p>Client</p>
+                    <div className="stars">
+                        <span className="fas "></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../public/cup-7263953.jpg" alt="" />
+                    <h3>Frank Kamgang</h3>
+                    <p>Client</p>
+                    <div className="stars">
+                        <span className="fas "></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../public/cup-7263953.jpg" alt="" />
+                    <h3>Frank Kamgang</h3>
+                    <p>Client</p>
+                    <div className="stars">
+                        <span className="fas "></span>
+                    </div>
+                </div>
+                <div className="">
+                    <img src="../../public/fr.jpg" alt="" />
+                    <h3>Frank Kamgang</h3>
+                    <p>Client</p>
+                    <div className="stars">
+                        <span className="fas fa-star"></span>
+                    </div>
+                </div>
+            </Carousel>
+
         </div>
     );
 }
