@@ -6,99 +6,70 @@
         flex-direction: column;
         padding: 10px 0;
         background-color: $white;
+
+
+        h1 {
+            font-weight: 600;
+            color: $darkblue;
+            font-size: 1.4rem;
+        }
+
+        h4 {
+            color: $skyblue;
+            font-size: 1.2rem;
+        }
     }
 }
 
-//     .people-container {
-
-
-//         .p {
-//             text-align: center;
-//             width: 90%;
-//             display: flex;
-//             flex-wrap: wrap;
-
-//         }
-
-//         .people {
-
-
-//             margin: 0 6%;
-
-//             img {
-//                 border-radius: 50%;
-//                 height: 80px;
-//                 width: 80px;
-//                 object-fit: cover;
-//             }
-
-//             .text {
-//                 display: flex;
-//                 flex-direction: column;
-
-
-//                 h3,
-//                 p {
-//                     margin-left: -32px;
-//                 }
-
-
-//             }
-
-//             display: flex;
-//             align-items: center;
-//             justify-content: space-around;
-//             padding: 0 20px;
-
-//             span {
-//                 color: $skyblue;
-//                 margin-top: -40px;
-//             }
-//         }
-//     }
-// }
-
-/* Container.scss */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    /* Ajuste la largeur selon tes besoins */
-    padding: 20px;
-    background-color: #f4f4f4;
+    margin: 49px 0 100px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: $white;
+    padding: 12 0 190px 0;
 
     .top-section {
-        display: flex;
-        width: 100%;
+        @media screen and (max-width: 882px) {
+            display: grid;
+        }
+
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
         align-items: center;
-        margin-bottom: 20px;
+        width: 100%;
+
+        @media screen and (max-width: 905px) {
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
 
         .image {
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background-color: #ddd;
-            /* Placeholder pour l'image */
-            margin-right: 20px;
 
             img {
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
                 object-fit: cover;
-                /* Assure que l'image garde les bonnes proportions */
+
             }
         }
 
         .titles {
+            @media screen and (max-width: 574px) {
+                // background-color: cyan;
+            }
+            @media screen and (max-width: 882px){
+                margin-left: -30px;
 
+            }
             h1,
             h2 {
-                margin: 0;
-                font-size: 1.2rem;
+
                 line-height: 1.4;
             }
 
@@ -111,13 +82,11 @@
 
     .spans {
         display: flex;
-        justify-content: space-between;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
 
         span {
             background-color: #eee;
-            // padding: 5px 10px;
             border-radius: 5px;
             font-size: 0.9rem;
         }
@@ -125,9 +94,12 @@
 
     .paragraph {
         text-align: center;
-        margin-top: auto;
-        padding-top: 10px;
-        font-size: 0.95rem;
         color: #333;
+        flex-wrap: wrap;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 12px 0;
     }
 }

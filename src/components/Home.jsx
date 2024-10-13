@@ -31,7 +31,7 @@ export const Home = () => {
             </h5>
           </div>
           <p className="my-8 font-bold text-center">
-            Passionne par le developpement d'interface utilisateur,
+            Passionné par le développement d'interface utilisateur,
             <br /> <i>Developper des choses jolies me passionne beaucoup...</i>
           </p>
           <div className="btns-container mx-auto flex my-10 items-center justify-center">

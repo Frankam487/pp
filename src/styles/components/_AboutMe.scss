@@ -1,5 +1,8 @@
 .aboutMe {
-    @media screen and (max-width: 882px) {}
+    @media screen and (max-width: 882px) {
+        display: block;
+
+    }
 
     align-items: center;
     display: grid;
@@ -13,6 +16,14 @@
 
     .contact-container {
         .contact {
+            @media screen and (max-width: 882px) {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+               
+                
+            }
 
             .name,
             .phone,
@@ -31,63 +42,94 @@
                     flex-wrap: wrap;
                     margin: 10px 12px;
                 }
-
+                
             }
-
-
+            
+            
         }
     }
-
-
+    
+    
     .intro {
+        @media screen and (max-width: 882px) {
+            @include childCenter;
+            flex-direction: column;
+            
+            
+        }
         margin: -10px 1px 162px 90px;
-        // background-color: red;
-
+        
+        margin: 12px 12px;
+        
+        
         .intro-container {
-            text-align: left;
-
-            .text {
-                margin: 20px auto;
+            @media screen and (max-width: 882px) {
+                @include childCenter;
+                flex-direction: column;
+                
             }
-
-
+            
+            p {
+                color: cyan;
+            }
+            
+            
+            text-align: left;
+            
+            .text {
+                margin: 20px auto;@media screen and (max-width: 882px) {
+                    @include childCenter;
+                    flex-direction: column;
+                    
+                    
+                }
+                
+            }
+            
+            
             h1 {
-
+                
                 letter-spacing: 2px;
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8),
-                    -1px -1px 0px rgba(0, 0, 0, 0.8),
-                    1px -1px 0px rgba(0, 0, 0, 0.8),
-                    -1px 1px 0px rgba(0, 0, 0, 0.8);
+                -1px -1px 0px rgba(0, 0, 0, 0.8),
+                1px -1px 0px rgba(0, 0, 0, 0.8),
+                -1px 1px 0px rgba(0, 0, 0, 0.8);
                 font-weight: 900;
                 font-size: 1.2rem;
             }
-
+            
             p {
                 color: rgba(0, 0, 0, 0.534);
-
-                text-align: left;
+                @media screen and (max-width: 882px) {
+                    text-align: center;
+                    
+                    
+                }
+                
             }
-
+            
             padding: 22px 0;
-
-
+            
+            
         }
     }
-
+    
     .footter {
         font-family: $font3;
         background: $skyblue;
         background: sky;
         border-radius: 50px 0px 50px 0px;
-        margin-bottom: -100px;
-        padding: 20px 10px;
-        width: 70%;
+        padding: 12px;
+        width: 100%;
+        margin: 0 12px;
         @include childCenter;
-
-        p {
-            color: rgba(242, 243, 244, 0.701);
-            font-weight: 900;
+        
+        @media screen and (max-width: 882px) {
+            width: 140%;
+            margin: 0 10px;
         }
+        
+        
     }
     
     .image {
@@ -98,13 +140,26 @@
         margin: 12px 0 45px 20%;
         border-radius: 12px;
         border: .4px solid $skyblue;
-
+        
+        @media screen and (max-width: 882px) {
+            height: 500px;
+            margin: 0 auto;
+            
+        }
+        
         img {
             border-radius: 12px;
+            
         }
     }
-
+    
     .interests {
+        @media screen and (max-width: 882px) {
+            @include childCenter;
+            flex-direction: column;
+       
+            
+        }
         margin: 20px auto;
         text-align: left;
 

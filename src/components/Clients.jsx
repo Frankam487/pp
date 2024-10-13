@@ -1,8 +1,39 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
- // N'oublie pas d'importer tes styles
+import ClientComponent from "./ClientComponent";
+import { useState } from "react";
 
 const Clients = () => {
+    const [data, setData] = useState([
+        {
+            id: 1,
+            image: '../../public/fr.jpg',
+            title: 'Kamgang Frank',
+            subtitle: 'Client',
+            paragraph: 'jaime bcp ce que tu fais sur les reseaux sociaux je tenais vraiment a te remercier ....'
+        },
+        {
+            id: 2,
+            image: '../../public/images.jpeg',
+            title: 'Marco luc',
+            subtitle: 'Client',
+            paragraph: 'Je te souhaite beaucoup de courage dans tes realisations'
+        },
+        {
+            id: 3,
+            image: '../../public/4.jpg',
+            title: 'Kamgang Frank',
+            subtitle: 'Client',
+            paragraph: 'jaime bcp ce que tu fais sur les reseaux sociaux je tenais vraiment a te remercier ....'
+        },
+        {
+            id: 4,
+            image: '../../public/1.jpg',
+            title: 'Kamdem Bruno',
+            subtitle: 'Client',
+            paragraph: 'jaime bcp ce que tu fais sur les reseaux sociaux je tenais vraiment a te remercier ....'
+        }
+    ])
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -29,28 +60,12 @@ const Clients = () => {
                 <h1>C'que mes clients disent</h1>
             </div>
             <Carousel responsive={responsive}>
-                <div className="container">
-                    <div className="top-section">
-                        <div className="image">
-                            <img src="../../public/work-1699510.jpg" alt="Image ronde" />
-                        </div>
-                        <div className="titles">
-                            <h1>Titre principal</h1>
-                            <h2>Sous-titre</h2>
-                        </div>
-                    <div className="spans">
-                        <span className="fas fa-star"></span>
-                        <span className="fas fa-star"></span>
-                        <span className="fas fa-star"></span>
-                        <span className="fas fa-star"></span>
-                    </div>
-                    </div>
+                {
+                    data.map((data) => (
+                        <ClientComponent title={data.title} subtitle={data.subtitle} paragraph={data.paragraph} image={data.image} />
+                    ))
+                }
 
-
-                    <div className="paragraph">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel orci euismod.</p>
-                    </div>
-                </div>
             </Carousel>
         </div>
     );

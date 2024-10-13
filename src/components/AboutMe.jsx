@@ -10,10 +10,7 @@ const AboutMe = () => {
             <h1>A propos de moi</h1>
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-            dolorem mollitia eaque minus voluptas eveniet itaque possimus!
-            Accusantium veritatis sequi officiis est. Dolore velit eaque, sequi
-            excepturi mollitia quas laudantium!
+            Le développement web en général m'a toujours attiré, bien qu'il soit divisé en plusieurs branche, le développement d'interface utilisateur me plait beaucoup, raison pour laquelle je me suis spécialié dans le développement Front-End...
           </p>
         </div>
         <div className="contact-container">
@@ -36,7 +33,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="interests">
-          <h2>Mon passe temps</h2>
+          <h2 style={{marginLeft:"12px"}}>Mon passe temps</h2>
           <div className="icon-container">
             <h3>
               <span className="fas fa-music"></span> <i>Music</i>
@@ -54,9 +51,7 @@ const AboutMe = () => {
             </h3>
           </div>
         </div>
-        <div className="footter">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio deleniti ratione cum nihil voluptatibus sint distincptate, voluptatum placeat reiciendis ipsa possimus velit dolorem delectus corrupti perferendis sapiente eligendi ullam praesentium, vitae culpa atque. Maiores rerum dolores officia cupiditate ut minus fuga velit alias quidem.</p>
-        </div>
+        
       </div>
     </div>
   );

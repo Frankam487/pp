@@ -1,8 +1,12 @@
 .form {
   background: $white;
   display: block;
-
-  .form-container {
+  
+input, textarea{
+  border: 2px solid rgba(20, 20, 20, 0.692);
+}
+  
+    .form-container {
     padding: 0 52px;
 
     @media screen and (max-width: 940px) {
@@ -22,7 +26,7 @@
       width: 100%;
 
       .email {
-
+        width: 100%;
         margin-right: -70px;
       }
     }
@@ -37,6 +41,10 @@
   }
 
   .contact-container {
+    @media screen and (max-width: 596px) {
+      margin: 0 auto;
+      align-items: center;
+    }
 
     display: flex;
     flex-wrap: nowrap;
