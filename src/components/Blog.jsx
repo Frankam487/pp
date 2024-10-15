@@ -1,21 +1,34 @@
-const Blog = () => {
-  return (
-    <div className="blog">
-      <div className="text">
-        <h3>Blog</h3>
-        <h1>Derniere Mise_A_Jour</h1>
-      </div>
+import { useState } from 'react';
+import Card from './Card';
 
-      <div className="images">
-        <img src="./images.jpg" alt="" />
-        <div className="img-footer">
-          <i className="">01 JAN 2020</i>
-          <h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor je
-            suis sed.
-          </h3>
-        </div>
-      </div>
+const Blog = () => {
+  const [card, setCard] = useState([
+    {
+      id: 1,
+      image: "../../1.jpg",
+      date: "12/14/2024",
+      text: "Je fais le developpement d'appli mobile et aussi dans le graphisme(photoshop)"
+    },
+    {
+      id: 1,
+      image: "../../1.jpg",
+      date: "12/14/2024",
+      text: "Je fais le developpement d'appli mobile et aussi dans le graphisme(photoshop)"
+    },
+    {
+      id: 1,
+      image: "../../1.jpg",
+      date: "12/14/2024",
+      text: "Je fais le developpement d'appli mobile et aussi dans le graphisme(photoshop)"
+    }
+  ])
+  return (
+    <div className="card-container">
+      {
+        card.map((card, index) => (
+          <Card key={index} card={card} />
+        ))
+      }
     </div>
   );
 };
