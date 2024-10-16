@@ -11,13 +11,13 @@ const Blog = () => {
     },
     {
       id: 1,
-      image: "../../1.jpg",
+      image: "../../4.jpg",
       date: "12/14/2024",
       text: "Je fais le developpement d'appli mobile et aussi dans le graphisme(photoshop)"
     },
     {
       id: 1,
-      image: "../../1.jpg",
+      image: "../../3.jpeg",
       date: "12/14/2024",
       text: "Je fais le developpement d'appli mobile et aussi dans le graphisme(photoshop)"
     }
