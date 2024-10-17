@@ -17,7 +17,7 @@ const Portfolio = () => {
       </div>
       <div className="projects-container">
         <div className="card">
-          <img src="../../fr.jpg" alt="" />
+          <img src="../../1.jpg" alt="" />
           <button className="btn1"><span className="fas fa-heart"></span></button>
           <button className="btn2"><span className="fas fa-hand"></span></button>
           <h3>Web Design</h3>
