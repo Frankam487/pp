@@ -43,9 +43,11 @@
 
         @media screen and (max-width: 905px) {
             display: grid;
-            grid-template-columns: 30% 70%;
+            width: 100%;
 
         }
+
+
 
         .image {
 
@@ -62,19 +64,34 @@
             }
         }
 
+        span {
+            color: $skyblue;
+        }
+
         .titles {
-            @media screen and (max-width: 574px) {
+            @media screen and (min-width: 1024px) {
+
+                h1,
+                h2 {
+                    margin-left: 22px;
+                }
             }
-            
+
             @media screen and (max-width: 817px) {
                 margin-left: 10px;
-                // background-color: red;
-                
+
             }
-            @media screen and (max-width: 500px ) {
-    margin-left: 20px;
-    
-}
+
+            @media screen and (max-width: 766px) {
+                margin-left: 43px;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+
+            }
+
             h1,
             h2 {
 

@@ -1,11 +1,9 @@
 .parcours {
     margin: 60px auto;
-
-    // background-color: red;
+// background-color: red;
     span {
         color: $skyblue;
     }
-
 
     .text {
         display: flex;
@@ -32,13 +30,12 @@
     }
 
     .education-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 60%;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 10px 40px;
 
         h2 {
+            display: flex;
             font-family: $font3;
             font-weight: 900;
             font-size: 1.3rem;
@@ -53,6 +50,7 @@
                 position: relative;
                 border-left: 1px solid $skyblue;
 
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -62,7 +60,7 @@
                     background-color: $whiteCasse;
                     border: 2px solid $skyblue;
                     top: 0;
-                    left: -10px;
+                    left: -8px;
                 }
 
                 &:hover::after {
@@ -95,7 +93,7 @@
                     background-color: $whiteCasse;
                     border: 2px solid $skyblue;
                     top: 0;
-                    left: -10px;
+                    left: -8px;
                 }
 
                 &:hover::after {
@@ -134,9 +132,26 @@
 
         }
 
+        @media (min-width: 1024px) {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 480px) {
+            margin-left: 20px;
+            width: 100%;
+
+        }
+
         .item,
         .exp {
-            margin: 40px auto;
+            margin: 10px;
 
             h3 {
                 font-size: 1rem;

@@ -20,7 +20,7 @@
     transition: .4s ease;
     overflow: hidden;
     &:hover {
-      transform: rotate(2deg);
+      transform: rotate(2deg) scale(1.03);
     }
   }
 

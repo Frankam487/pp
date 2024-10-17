@@ -1,13 +1,9 @@
-* {
-    // border: 1px solid red;
-}
 
 .content {
     grid-template-columns: 100%;
-
+    // background-color: red;
     display: grid;
     margin: 100px 0;
-    // background-color: red;
 
     @media screen and (max-width: 860px) {
         height: 100vh;
@@ -16,7 +12,7 @@
 
 
         .home {
-            
+
             .name-content {
                 margin: 0 20px;
             }
