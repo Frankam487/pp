@@ -13,6 +13,7 @@ import Skills from "./components/Skills";
 
 import Formm from "./components/Formm";
 import Footer from "./components/Footer";
+import { CardComponent } from "./components/CardComponent";
 
 const App = () => {
   return (
@@ -29,7 +30,8 @@ const App = () => {
         <Clients />
         <Blog />
         <Formm />
-        <Footer/>
+        <Footer />
+       
       </div>
     </>
   );

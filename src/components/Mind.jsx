@@ -2,12 +2,11 @@ const Mind = () => {
     return ( 
         <div className="mind">
             <div className="text">
-                <h3>Avoir Un Projet A L`Esprit</h3>
-                <p>Lorem ipsum hjbjhrfghfbhdsjhbfhjebfhjbfhskbjadfjkdolor, sit amet consecte <br />
-                    tur adipisicing elit. Nisi accusantium nam quidem?</p>
+                <h3>As-tu Un Projet En Tete ?</h3>
+                <p>Etablis un cahier de charge de ce projet et viens me voir pour qu'on en parle <br />
+                    Dans le bur de trouver une solution et réaliser le projet</p>
             </div>
-                <button>
-                    Me Contacter</button>
+                <button> Me Contacter</button>
         </div>
      );
 }

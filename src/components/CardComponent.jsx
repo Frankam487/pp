@@ -1,7 +1,7 @@
 // export const CardComponent = () => {
 //     return ( 
-//         <div className="cardeComponent">
-
+//         <div className="cardComponent">
+//     <h1>h1</h1>
 //         </div>
 //      );
 // }
