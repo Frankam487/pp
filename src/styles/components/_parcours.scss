@@ -1,10 +1,9 @@
 .parcours {
     margin: 60px auto;
-// background-color: red;
     span {
         color: $skyblue;
     }
-
+    
     .text {
         display: flex;
         flex-direction: column;
@@ -16,28 +15,29 @@
             font-size: 1.1rem;
             font-weight: 900;
         }
-
+        
         h1 {
             color: $darkblue;
             font-family: $font3;
             margin: 10px auto;
             font-weight: 900;
             text-shadow: 1px 1px rgba(0, 0, 0, 0.8),
-                -1px 1px 0px rgba(0, 0, 0, 0.8);
+            -1px 1px 0px rgba(0, 0, 0, 0.8);
             font-size: 1.6rem;
             letter-spacing: 2.5px;
         }
     }
-
+    
     .education-container {
         display: grid;
         grid-template-columns: 50% 50%;
         margin: 10px 40px;
-
+        
         h2 {
             display: flex;
             font-family: $font3;
             font-weight: 900;
+            // background-color: red;
             font-size: 1.3rem;
         }
 
