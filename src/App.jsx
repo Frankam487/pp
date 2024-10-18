@@ -30,6 +30,7 @@ const App = () => {
         <Clients />
         <Blog />
         <Formm />
+        
         <Footer />
        
       </div>
