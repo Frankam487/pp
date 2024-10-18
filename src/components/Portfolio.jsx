@@ -1,6 +1,30 @@
+import { useState } from "react";
+import CardProjects from "./CardProjects";
 
 const Portfolio = () => {
-
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      image: "../../public/images.jpeg",
+      name: "Web Design"
+    },
+    {
+      id: 2,
+      image: "../../public/3.jpeg",
+      name: "Web Design"
+    },
+    {
+      id: 3,
+      image: "../../public/1.jpg",
+      name: "Web Design"
+    },
+    {
+      id: 4,
+      image: "../../public/4.jpg",
+      name: "Web Design"
+    },
+    
+  ]);
   return (
     <div className="portfolio">
       <div className="text">
@@ -16,13 +40,15 @@ const Portfolio = () => {
         </ul>
       </div>
       <div className="projects-container">
-        <div className="card">
-          <img src="../../1.jpg" alt="" />
-          <button className="btn1"><span className="fas fa-heart"></span></button>
-          <button className="btn2"><span className="fas fa-hand"></span></button>
-          <h3>Web Design</h3>
-        </div>
-
+        
+       
+        {
+          projects.map((project, index) => (
+            <CardProjects project={project} key={index} />
+          )
+            
+          )
+      }
 
       </div>
 

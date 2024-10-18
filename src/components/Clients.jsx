@@ -61,8 +61,8 @@ const Clients = () => {
             </div>
             <Carousel responsive={responsive}>
                 {
-                    data.map((data) => (
-                        <ClientComponent title={data.title} subtitle={data.subtitle} paragraph={data.paragraph} image={data.image} />
+                    data.map((data, index) => (
+                        <ClientComponent key={index} title={data.title} subtitle={data.subtitle} paragraph={data.paragraph} image={data.image} />
                     ))
                 }
 
