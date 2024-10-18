@@ -12,19 +12,19 @@ function Footer() {
         </p>
         <div className="flex justify-around ">
           <a
-            href="" target="_blank"
+            href="https://www.facebook.com/Frankam.Shopping" target="_blank"
             className="fab fa-facebook m-3 bg-blue-400 p-2 text-1xl rounded-md hover:bg-blue-300 hover:translate-x-1 transition-all ease duration-[300ms]"
           ></a>
           <a
-            href=""
+            href="https://github.com/Frankam487"
             className="m-3 hover:translate-x-1 fab fa-github bg-blue-400 p-2 text-1xl rounded-md hover:bg-blue-300 transition-all ease duration-[300ms]"
           ></a>
           <a
-            href="" target="_blank"
+            href="https://www.linkedin.com/in/frank-kamgang/" target="_blank"
             className="fab  m-3 fa-linkedin bg-blue-400 p-2 text-1xl rounded-md hover:bg-blue-300 hover:translate-x-1 hover:scale-x-2 transition-all ease duration-[300ms]"
           ></a>
           <a
-            href="" target="_blank"
+            href="https://t.me/Frankam4" target="_blank"
             className="fab fa-telegram m-3 hover:scale-1  bg-blue-400 p-2 text-1xl rounded-md hover:bg-blue-300 hover:translate-x-1 transition-all ease duration-[200ms]"
           ></a>
         </div>
@@ -32,7 +32,7 @@ function Footer() {
 
           <p className="mt-6 text-cyan-50 font-arial">Tout droit réservé... </p>
           <h2><span>By</span>      Frank Kamgang</h2>
-      {/* <h1 >tes noyaux</h1> */}
+      
         </div>
       </div>
     </div>
